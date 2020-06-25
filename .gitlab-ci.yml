@@ -1,0 +1,24 @@
+image: node:latest
+
+pages:
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - |
+        if [ -e yarn.lock ]; then
+            yarn install --frozen-lockfile
+        elif [ -e package-lock.json ]; then
+            npm ci
+        else
+          npm i
+        fi
+          npm run build
+          
+    - mv ./build/docusaurus ../public
+
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
