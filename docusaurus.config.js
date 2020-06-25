@@ -1,8 +1,8 @@
 module.exports = {
   title: 'NosWings Wiki - Preview',
   tagline: 'NosWings Wiki - Preview',
-  url: 'https://noswings.gitlab.io/',
-  baseUrl: 'preview-wiki/',
+  url: 'https://noswings.gitlab.io/preview-wiki/',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'noswings',
   projectName: 'preview-wiki',
