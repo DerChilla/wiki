@@ -1,11 +1,11 @@
 module.exports = {
-  title: 'NosWings Wiki',
-  tagline: 'NosWings Wiki',
-  url: 'http://wiki.noswings.com',
-  baseUrl: '/',
+  title: 'NosWings Wiki - Preview',
+  tagline: 'NosWings Wiki - Preview',
+  url: 'https://noswings.gitlab.io/',
+  baseUrl: '/preview-wiki',
   favicon: 'img/favicon.ico',
   organizationName: 'noswings',
-  projectName: 'wiki',
+  projectName: 'preview-wiki',
   themeConfig: {
     navbar: {
       title: 'NosWings Wiki',

@@ -5,17 +5,10 @@ pages:
     paths:
       - node_modules/
   script:
-    - |
-        if [ -e yarn.lock ]; then
-            yarn install --frozen-lockfile
-        elif [ -e package-lock.json ]; then
-            npm ci
-        else
-          npm i
-        fi
-          npm run build
-          
-    - mv ./build/docusaurus ../public
+    - npm install
+    - npm run build
+    - mv ./build /tmp/public
+    - cd /tmp
 
   artifacts:
     paths:
