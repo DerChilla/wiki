@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Balancing the game',
+      label: 'Wiki',
       items: ['introduction'],
     },
     {
