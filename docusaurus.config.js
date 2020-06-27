@@ -1,3 +1,9 @@
+
+const allDocHomesPaths = [
+  '/docs',
+  '/docs/next'
+];
+
 module.exports = {
   title: 'NosWings Wiki - Preview',
   tagline: 'NosWings Wiki - Preview',
@@ -63,14 +69,29 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} NosWings.`,
     },
-  },
+  },  
+  plugins: [    
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html'],
+        createRedirects: function (path) {
+          // redirect to /docs from /docs/introduction,
+          // as introduction has been made the home doc
+          if (allDocHomesPaths.includes(path)) {
+            return [`${path}/introduction`];
+          }
+        },
+      },
+    ],
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'spreworks',
+          homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

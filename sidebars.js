@@ -2,8 +2,13 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Closed Beta',
-      items: ['spreworks', 'eqbalance'],
+      label: 'Balancing the game',
+      items: ['introduction'],
+    },
+    {
+      type: 'category',
+      label: 'Balancing the game',
+      items: ['specialist-reworks', 'equipment-balance'],
     },
   ]
 };
