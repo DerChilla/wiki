@@ -1,10 +1,9 @@
-# NosWings: Equipment Balance
+---
+id: eqbalance
+title: Equipment Balance
+---
 
-
-<center>
-<img src=https://cdn.discordapp.com/attachments/602206447178088468/716991934362550272/noswings_text_2.png height=200>
-</center>
-
+___
 
 ## Important notice
 All melee/ranged weapons:
