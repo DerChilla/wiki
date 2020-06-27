@@ -36,6 +36,12 @@ ___
 - Move in a different direction against the player's will for 10 seconds.
 - All attacks are reduced by 5%.
 
+**![](https://i.imgur.com/3BFI9sA.png) Harden**
+- **Level**: 5
+- **Type**: Positive Effect
+- **Duration**: 3s
+- Damage is decreased by 50%.
+
 
 ## Ninja
 ### Skills
@@ -564,7 +570,7 @@ ___
 - [**NEW**] There is a 100% chance of causing [![](https://friends111.nostale.club/list/ip/10380.png) Strong Berserk Spirit].
 
 **![](https://friends111.nostale.club/list/ip/6121.png) Soul Sword**
-- Mana usage: **999s** -> **666s**
+- Mana usage: **999** -> **666**
 
 ### Buffs
 
