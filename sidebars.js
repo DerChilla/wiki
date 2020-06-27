@@ -1,7 +1,14 @@
 module.exports = {
-  someSidebar: {
-    'Index': ['index'],
-    'Cooking System': ['cooking-system/example'],
-    'Contribution': ['contribution/firststep']
-  },
+  docs: [
+    {
+      type: 'category',
+      label: 'Balancing the game',
+      items: ['introduction'],
+    },
+    {
+      type: 'category',
+      label: 'Balancing the game',
+      items: ['specialist-reworks', 'equipment-balance'],
+    },
+  ]
 };
