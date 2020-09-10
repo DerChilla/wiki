@@ -13,7 +13,7 @@ You can now tell an exact time until your skill is ready!
 
 ## Server Time
 
-So you don't get lost in different time zones ^_^
+So you don't get lost in different time zones.
 
 ![](/static/img/quality-of-life/server-time.png "Server Time")
 
