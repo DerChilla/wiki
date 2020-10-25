@@ -19,17 +19,13 @@ module.exports = {
         alt: 'NosWings Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {
-          to: 'docs/',
+          to: '/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Game Content',
           position: 'left',
         },
-        {
-          to: 'blog',
-          label: 'Patch Notes',
-          position: 'left'},
         {
           href: 'https://gitlab.com/noswings/preview-wiki',
           label: 'GitLab',
@@ -57,10 +53,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Patch Notes',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/noswings',
             },
@@ -70,37 +62,17 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} NosWings.`,
     },
   },  
-  plugins: [    
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        fromExtensions: ['html'],
-        createRedirects: function (path) {
-          // redirect to /docs from /docs/introduction,
-          // as introduction has been made the home doc
-          if (allDocHomesPaths.includes(path)) {
-            return [`${path}/introduction`];
-          }
-        },
-      },
-    ],
-  ],
+  plugins: [],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'introduction',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
             'https://github.com/noswings/wiki/edit/master/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/noswings/wiki/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
